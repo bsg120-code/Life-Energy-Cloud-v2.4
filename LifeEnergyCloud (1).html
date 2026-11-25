@@ -1,0 +1,2769 @@
+<!doctype html>
+<html lang="ko"><head>
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#070913">
+    <title>Life Energy Cloud v2.4 - 라이프 에너지 자율 관리 시스템</title>
+    <meta name="description" content="라이프 에너지 자율 관리 클라우드 플랫폼. 실시간 듀얼 파형, 정밀 백그라운드 타이머, 양자 수신 세션, Gemini 웹 검색 AI 코치 탑재">
+    <meta property="og:title" content="Life Energy Cloud v2.4">
+    <meta property="og:description" content="라이프 에너지 자율 관리 클라우드 플랫폼. 실시간 듀얼 파형, 정밀 백그라운드 타이머, 양자 수신 세션, Gemini 웹 검색 AI 코치 탑재">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" as="style" crossorigin="" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Orbitron:wght@500;700;800;900&amp;family=Rajdhani:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="/_aistudio-iframe.js?v=29045eb3"></script><script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@2.0.4"></script><style>.aistudio-hover-highlight { box-shadow: inset 0 0 0 0.5px white, inset 0 0 0 1.5px rgba(128,128,128,0.6) !important; }.aistudio-active-highlight { outline: 2px solid #87a9ff !important; outline-offset: -2px !important; box-shadow: 0 0 0 0.5px rgba(0,0,0,0.3), inset 0 0 0 0.5px rgba(0,0,0,0.3) !important; }.aistudio-generating-blur { filter: blur(5px) grayscale(100%) brightness(28%) !important; transition: filter 0.3s ease; }#aistudio-focus-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: #87a9ff; border-radius: 12px; z-index: 10000; padding: 8px; color: #32302c; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }#aistudio-hover-mode-tag { position: absolute; display: none; align-items: center; gap: 4px; background: rgba(128,128,128,0.6); border-radius: 12px; z-index: 10000; padding: 8px; color: white; font-family: Inter, sans-serif; font-size: 14px; font-style: normal; font-weight: 500; line-height: 21px; pointer-events: none; }.aistudio-img-icon { display: none; vertical-align: middle; pointer-events: auto; cursor: pointer; }.aistudio-img-icon.visible { display: inline-flex; }#aistudio-focus-mode-tag .aistudio-img-icon { position: relative; width: 26px; height: 26px; background: #32302c; border-radius: 6px; margin: -4px -4px -4px 0; }#aistudio-focus-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 4px; left: 4px; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-hover-mode-tag .aistudio-img-icon { position: relative; width: 18px; height: 18px; margin-left: 4px; }#aistudio-hover-mode-tag .aistudio-img-icon::before { content: ""; position: absolute; top: 0; left: 0; width: 18px; height: 18px; background-color: white; -webkit-mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; mask-image: url("https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/edit_fix_auto/default/24px.svg"); mask-size: contain; mask-repeat: no-repeat; }#aistudio-focus-mode-tag .aistudio-img-icon:hover, #aistudio-hover-mode-tag .aistudio-img-icon:hover { background: #424242 !important; }#aistudio-focus-mode-tag .aistudio-img-icon:active, #aistudio-hover-mode-tag .aistudio-img-icon:active { background: #393f51 !important; }</style><style type="text/css" data-vite-dev-id="/app/applet/src/index.css">/*! tailwindcss v4.3.5 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-950: oklch(27.9% 0.077 45.635);
+    --color-emerald-200: oklch(90.5% 0.093 164.15);
+    --color-emerald-300: oklch(84.5% 0.143 164.978);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-emerald-950: oklch(26.2% 0.051 172.552);
+    --color-cyan-50: oklch(98.4% 0.019 200.873);
+    --color-cyan-200: oklch(91.7% 0.08 205.041);
+    --color-cyan-300: oklch(86.5% 0.127 207.078);
+    --color-cyan-400: oklch(78.9% 0.154 211.53);
+    --color-cyan-500: oklch(71.5% 0.143 215.221);
+    --color-cyan-900: oklch(39.8% 0.07 227.392);
+    --color-cyan-950: oklch(30.2% 0.056 229.695);
+    --color-sky-200: oklch(90.1% 0.058 230.902);
+    --color-sky-300: oklch(82.8% 0.111 230.318);
+    --color-sky-400: oklch(74.6% 0.16 232.661);
+    --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-600: oklch(54.6% 0.245 262.881);
+    --color-purple-300: oklch(82.7% 0.119 306.383);
+    --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-pink-200: oklch(89.9% 0.061 343.231);
+    --color-pink-300: oklch(82.3% 0.12 346.018);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
+    --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-rose-200: oklch(89.2% 0.058 10.001);
+    --color-rose-300: oklch(81% 0.117 11.638);
+    --color-rose-400: oklch(71.2% 0.194 13.428);
+    --color-rose-500: oklch(64.5% 0.246 16.439);
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
+    --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --tracking-tight: -0.025em;
+    --tracking-wide: 0.025em;
+    --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
+    --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --animate-spin: spin 1s linear infinite;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --blur-sm: 8px;
+    --blur-md: 12px;
+    --blur-xl: 24px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
+  .visible {
+    visibility: visible;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .fixed {
+    position: fixed;
+  }
+  .relative {
+    position: relative;
+  }
+  .inset-0 {
+    inset: 0px;
+  }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
+  .top-2\.5 {
+    top: calc(var(--spacing) * 2.5);
+  }
+  .top-24 {
+    top: calc(var(--spacing) * 24);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .bottom-2\.5 {
+    bottom: calc(var(--spacing) * 2.5);
+  }
+  .left-2\.5 {
+    left: calc(var(--spacing) * 2.5);
+  }
+  .left-3 {
+    left: calc(var(--spacing) * 3);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-30 {
+    z-index: 30;
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .m-0 {
+    margin: 0px;
+  }
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-2\.5 {
+    margin-top: calc(var(--spacing) * 2.5);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mr-1 {
+    margin-right: var(--spacing);
+  }
+  .mr-1\.5 {
+    margin-right: calc(var(--spacing) * 1.5);
+  }
+  .mb-0\.5 {
+    margin-bottom: calc(var(--spacing) * 0.5);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-2\.5 {
+    margin-bottom: calc(var(--spacing) * 2.5);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .block {
+    display: block;
+  }
+  .contents {
+    display: contents;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .h-0\.5 {
+    height: calc(var(--spacing) * 0.5);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-2\.5 {
+    height: calc(var(--spacing) * 2.5);
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-3\.5 {
+    height: calc(var(--spacing) * 3.5);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-\[54px\] {
+    height: 54px;
+  }
+  .h-\[88\%\] {
+    height: 88%;
+  }
+  .h-\[120px\] {
+    height: 120px;
+  }
+  .h-\[148px\] {
+    height: 148px;
+  }
+  .h-\[170px\] {
+    height: 170px;
+  }
+  .h-\[196px\] {
+    height: 196px;
+  }
+  .h-\[260px\] {
+    height: 260px;
+  }
+  .h-\[280px\] {
+    height: 280px;
+  }
+  .h-dvh {
+    height: 100dvh;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-0 {
+    min-height: 0px;
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2\.5 {
+    width: calc(var(--spacing) * 2.5);
+  }
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+  .w-3\.5 {
+    width: calc(var(--spacing) * 3.5);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-\[54px\] {
+    width: 54px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[88\%\] {
+    max-width: 88%;
+  }
+  .max-w-\[236px\] {
+    max-width: 236px;
+  }
+  .max-w-\[350px\] {
+    max-width: 350px;
+  }
+  .max-w-\[360px\] {
+    max-width: 360px;
+  }
+  .min-w-0 {
+    min-width: 0px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .scale-110 {
+    --tw-scale-x: 110%;
+    --tw-scale-y: 110%;
+    --tw-scale-z: 110%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .transform {
+    transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+  .animate-spin {
+    animation: var(--animate-spin);
+  }
+  .cursor-crosshair {
+    cursor: crosshair;
+  }
+  .cursor-ew-resize {
+    cursor: ew-resize;
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .touch-none {
+    touch-action: none;
+  }
+  .resize {
+    resize: both;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  :where(.space-y-1 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+    margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-x-2 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+  }
+  :where(.space-x-3 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+  }
+  :where(.space-x-4 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-t-3xl {
+    border-top-left-radius: var(--radius-3xl);
+    border-top-right-radius: var(--radius-3xl);
+  }
+  .rounded-br-sm {
+    border-bottom-right-radius: var(--radius-sm);
+  }
+  .rounded-bl-sm {
+    border-bottom-left-radius: var(--radius-sm);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-amber-400\/35 {
+    border-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-400) 35%, transparent);
+    }
+  }
+  .border-amber-400\/50 {
+    border-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-400) 50%, transparent);
+    }
+  }
+  .border-blue-500\/20 {
+    border-color: color-mix(in srgb, oklch(62.3% 0.214 259.815) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-blue-500) 20%, transparent);
+    }
+  }
+  .border-cyan-300 {
+    border-color: var(--color-cyan-300);
+  }
+  .border-cyan-400 {
+    border-color: var(--color-cyan-400);
+  }
+  .border-cyan-400\/30 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 30%, transparent);
+    }
+  }
+  .border-cyan-400\/35 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 35%, transparent);
+    }
+  }
+  .border-cyan-400\/40 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 40%, transparent);
+    }
+  }
+  .border-cyan-400\/45 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 45%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 45%, transparent);
+    }
+  }
+  .border-cyan-400\/50 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 50%, transparent);
+    }
+  }
+  .border-cyan-400\/60 {
+    border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-400) 60%, transparent);
+    }
+  }
+  .border-cyan-500\/20 {
+    border-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-500) 20%, transparent);
+    }
+  }
+  .border-cyan-500\/25 {
+    border-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-500) 25%, transparent);
+    }
+  }
+  .border-cyan-500\/30 {
+    border-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-500) 30%, transparent);
+    }
+  }
+  .border-cyan-500\/35 {
+    border-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-cyan-500) 35%, transparent);
+    }
+  }
+  .border-emerald-400\/30 {
+    border-color: color-mix(in srgb, oklch(76.5% 0.177 163.223) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-emerald-400) 30%, transparent);
+    }
+  }
+  .border-emerald-400\/40 {
+    border-color: color-mix(in srgb, oklch(76.5% 0.177 163.223) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-emerald-400) 40%, transparent);
+    }
+  }
+  .border-emerald-400\/50 {
+    border-color: color-mix(in srgb, oklch(76.5% 0.177 163.223) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-emerald-400) 50%, transparent);
+    }
+  }
+  .border-pink-500\/30 {
+    border-color: color-mix(in srgb, oklch(65.6% 0.241 354.308) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-pink-500) 30%, transparent);
+    }
+  }
+  .border-purple-500 {
+    border-color: var(--color-purple-500);
+  }
+  .border-rose-400\/60 {
+    border-color: color-mix(in srgb, oklch(71.2% 0.194 13.428) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-rose-400) 60%, transparent);
+    }
+  }
+  .border-rose-500\/40 {
+    border-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-rose-500) 40%, transparent);
+    }
+  }
+  .border-rose-500\/45 {
+    border-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 45%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-rose-500) 45%, transparent);
+    }
+  }
+  .border-sky-400\/25 {
+    border-color: color-mix(in srgb, oklch(74.6% 0.16 232.661) 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-sky-400) 25%, transparent);
+    }
+  }
+  .border-sky-400\/40 {
+    border-color: color-mix(in srgb, oklch(74.6% 0.16 232.661) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-sky-400) 40%, transparent);
+    }
+  }
+  .border-sky-400\/50 {
+    border-color: color-mix(in srgb, oklch(74.6% 0.16 232.661) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-sky-400) 50%, transparent);
+    }
+  }
+  .border-slate-700 {
+    border-color: var(--color-slate-700);
+  }
+  .border-white\/5 {
+    border-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .border-white\/10 {
+    border-color: color-mix(in srgb, #fff 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+    }
+  }
+  .border-white\/15 {
+    border-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .border-white\/25 {
+    border-color: color-mix(in srgb, #fff 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+    }
+  }
+  .bg-\[\#090d1f\] {
+    background-color: #090d1f;
+  }
+  .bg-\[\#050814\]\/95 {
+    background-color: color-mix(in oklab, #050814 95%, transparent);
+  }
+  .bg-amber-500\/15 {
+    background-color: color-mix(in srgb, oklch(76.9% 0.188 70.08) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-500) 15%, transparent);
+    }
+  }
+  .bg-amber-500\/20 {
+    background-color: color-mix(in srgb, oklch(76.9% 0.188 70.08) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-500) 20%, transparent);
+    }
+  }
+  .bg-amber-950\/90 {
+    background-color: color-mix(in srgb, oklch(27.9% 0.077 45.635) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-950) 90%, transparent);
+    }
+  }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
+  }
+  .bg-black\/45 {
+    background-color: color-mix(in srgb, #000 45%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 45%, transparent);
+    }
+  }
+  .bg-black\/55 {
+    background-color: color-mix(in srgb, #000 55%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 55%, transparent);
+    }
+  }
+  .bg-black\/60 {
+    background-color: color-mix(in srgb, #000 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
+    }
+  }
+  .bg-black\/65 {
+    background-color: color-mix(in srgb, #000 65%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 65%, transparent);
+    }
+  }
+  .bg-black\/70 {
+    background-color: color-mix(in srgb, #000 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 70%, transparent);
+    }
+  }
+  .bg-black\/75 {
+    background-color: color-mix(in srgb, #000 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 75%, transparent);
+    }
+  }
+  .bg-cyan-300 {
+    background-color: var(--color-cyan-300);
+  }
+  .bg-cyan-400 {
+    background-color: var(--color-cyan-400);
+  }
+  .bg-cyan-500\/10 {
+    background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-500) 10%, transparent);
+    }
+  }
+  .bg-cyan-500\/15 {
+    background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-500) 15%, transparent);
+    }
+  }
+  .bg-cyan-500\/20 {
+    background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-500) 20%, transparent);
+    }
+  }
+  .bg-cyan-950 {
+    background-color: var(--color-cyan-950);
+  }
+  .bg-cyan-950\/40 {
+    background-color: color-mix(in srgb, oklch(30.2% 0.056 229.695) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-cyan-950) 40%, transparent);
+    }
+  }
+  .bg-emerald-400 {
+    background-color: var(--color-emerald-400);
+  }
+  .bg-emerald-500\/10 {
+    background-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-500) 10%, transparent);
+    }
+  }
+  .bg-emerald-500\/15 {
+    background-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-500) 15%, transparent);
+    }
+  }
+  .bg-emerald-950\/90 {
+    background-color: color-mix(in srgb, oklch(26.2% 0.051 172.552) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-950) 90%, transparent);
+    }
+  }
+  .bg-pink-400 {
+    background-color: var(--color-pink-400);
+  }
+  .bg-pink-500\/10 {
+    background-color: color-mix(in srgb, oklch(65.6% 0.241 354.308) 10%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-pink-500) 10%, transparent);
+    }
+  }
+  .bg-purple-500\/25 {
+    background-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-purple-500) 25%, transparent);
+    }
+  }
+  .bg-rose-500\/15 {
+    background-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-500) 15%, transparent);
+    }
+  }
+  .bg-rose-500\/20 {
+    background-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-500) 20%, transparent);
+    }
+  }
+  .bg-sky-400 {
+    background-color: var(--color-sky-400);
+  }
+  .bg-sky-500\/15 {
+    background-color: color-mix(in srgb, oklch(68.5% 0.169 237.323) 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-sky-500) 15%, transparent);
+    }
+  }
+  .bg-sky-500\/25 {
+    background-color: color-mix(in srgb, oklch(68.5% 0.169 237.323) 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-sky-500) 25%, transparent);
+    }
+  }
+  .bg-slate-500 {
+    background-color: var(--color-slate-500);
+  }
+  .bg-slate-800 {
+    background-color: var(--color-slate-800);
+  }
+  .bg-slate-800\/80 {
+    background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-800) 80%, transparent);
+    }
+  }
+  .bg-slate-800\/90 {
+    background-color: color-mix(in srgb, oklch(27.9% 0.041 260.031) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-800) 90%, transparent);
+    }
+  }
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
+  .bg-slate-900\/50 {
+    background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-900) 50%, transparent);
+    }
+  }
+  .bg-slate-900\/80 {
+    background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-900) 80%, transparent);
+    }
+  }
+  .bg-slate-900\/90 {
+    background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-900) 90%, transparent);
+    }
+  }
+  .bg-slate-900\/95 {
+    background-color: color-mix(in srgb, oklch(20.8% 0.042 265.755) 95%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-900) 95%, transparent);
+    }
+  }
+  .bg-slate-950\/60 {
+    background-color: color-mix(in srgb, oklch(12.9% 0.042 264.695) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-950) 60%, transparent);
+    }
+  }
+  .bg-slate-950\/75 {
+    background-color: color-mix(in srgb, oklch(12.9% 0.042 264.695) 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-950) 75%, transparent);
+    }
+  }
+  .bg-slate-950\/85 {
+    background-color: color-mix(in srgb, oklch(12.9% 0.042 264.695) 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-950) 85%, transparent);
+    }
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white\/5 {
+    background-color: color-mix(in srgb, #fff 5%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-\[\#8b5cf6\] {
+    --tw-gradient-from: #8b5cf6;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-cyan-500 {
+    --tw-gradient-from: var(--color-cyan-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#d946ef\] {
+    --tw-gradient-to: #d946ef;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-blue-600 {
+    --tw-gradient-to: var(--color-blue-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-0 {
+    padding: 0px;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-3\.5 {
+    padding: calc(var(--spacing) * 3.5);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
+  .px-1\.5 {
+    padding-inline: calc(var(--spacing) * 1.5);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-3\.5 {
+    padding-inline: calc(var(--spacing) * 3.5);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .pt-1 {
+    padding-top: var(--spacing);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pt-2\.5 {
+    padding-top: calc(var(--spacing) * 2.5);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[9px\] {
+    font-size: 9px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wide {
+    --tw-tracking: var(--tracking-wide);
+    letter-spacing: var(--tracking-wide);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .tracking-widest {
+    --tw-tracking: var(--tracking-widest);
+    letter-spacing: var(--tracking-widest);
+  }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
+  .whitespace-pre-wrap {
+    white-space: pre-wrap;
+  }
+  .text-amber-200 {
+    color: var(--color-amber-200);
+  }
+  .text-amber-400 {
+    color: var(--color-amber-400);
+  }
+  .text-cyan-50 {
+    color: var(--color-cyan-50);
+  }
+  .text-cyan-200 {
+    color: var(--color-cyan-200);
+  }
+  .text-cyan-200\/90 {
+    color: color-mix(in srgb, oklch(91.7% 0.08 205.041) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-cyan-200) 90%, transparent);
+    }
+  }
+  .text-cyan-300 {
+    color: var(--color-cyan-300);
+  }
+  .text-cyan-300\/80 {
+    color: color-mix(in srgb, oklch(86.5% 0.127 207.078) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-cyan-300) 80%, transparent);
+    }
+  }
+  .text-cyan-300\/90 {
+    color: color-mix(in srgb, oklch(86.5% 0.127 207.078) 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-cyan-300) 90%, transparent);
+    }
+  }
+  .text-cyan-400 {
+    color: var(--color-cyan-400);
+  }
+  .text-cyan-400\/70 {
+    color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-cyan-400) 70%, transparent);
+    }
+  }
+  .text-cyan-400\/75 {
+    color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 75%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-cyan-400) 75%, transparent);
+    }
+  }
+  .text-emerald-200 {
+    color: var(--color-emerald-200);
+  }
+  .text-emerald-300 {
+    color: var(--color-emerald-300);
+  }
+  .text-emerald-400 {
+    color: var(--color-emerald-400);
+  }
+  .text-pink-200 {
+    color: var(--color-pink-200);
+  }
+  .text-pink-300\/80 {
+    color: color-mix(in srgb, oklch(82.3% 0.12 346.018) 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-pink-300) 80%, transparent);
+    }
+  }
+  .text-pink-400 {
+    color: var(--color-pink-400);
+  }
+  .text-purple-300 {
+    color: var(--color-purple-300);
+  }
+  .text-rose-200 {
+    color: var(--color-rose-200);
+  }
+  .text-rose-300 {
+    color: var(--color-rose-300);
+  }
+  .text-rose-400 {
+    color: var(--color-rose-400);
+  }
+  .text-sky-200 {
+    color: var(--color-sky-200);
+  }
+  .text-sky-300 {
+    color: var(--color-sky-300);
+  }
+  .text-sky-400 {
+    color: var(--color-sky-400);
+  }
+  .text-slate-100 {
+    color: var(--color-slate-100);
+  }
+  .text-slate-200 {
+    color: var(--color-slate-200);
+  }
+  .text-slate-300 {
+    color: var(--color-slate-300);
+  }
+  .text-slate-400 {
+    color: var(--color-slate-400);
+  }
+  .text-slate-500 {
+    color: var(--color-slate-500);
+  }
+  .text-slate-950 {
+    color: var(--color-slate-950);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal, ) var(--tw-slashed-zero, ) var(--tw-numeric-figure, ) var(--tw-numeric-spacing, ) var(--tw-numeric-fraction, );
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .opacity-80 {
+    opacity: 80%;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_8px_\#00f2fe\] {
+    --tw-shadow: 0 0 8px var(--tw-shadow-color, #00f2fe);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_8px_\#34d399\] {
+    --tw-shadow: 0 0 8px var(--tw-shadow-color, #34d399);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_10px_\#00f2fe\] {
+    --tw-shadow: 0 0 10px var(--tw-shadow-color, #00f2fe);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_12px_rgba\(139\,92\,246\,0\.25\)\] {
+    --tw-shadow: 0 0 12px var(--tw-shadow-color, rgba(139,92,246,0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_18px_rgba\(0\,242\,254\,0\.12\)\] {
+    --tw-shadow: 0 0 18px var(--tw-shadow-color, rgba(0,242,254,0.12));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_20px_rgba\(0\,242\,254\,0\.16\)\] {
+    --tw-shadow: 0 0 20px var(--tw-shadow-color, rgba(0,242,254,0.16));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_0_25px_rgba\(245\,158\,11\,0\.35\)\] {
+    --tw-shadow: 0 0 25px var(--tw-shadow-color, rgba(245,158,11,0.35));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-xl {
+    --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-purple-500\/35 {
+    --tw-shadow-color: color-mix(in srgb, oklch(62.7% 0.265 303.9) 35%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-purple-500) 35%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+  }
+  .backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .backdrop-blur-sm {
+    --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .backdrop-blur-xl {
+    --tw-backdrop-blur: blur(var(--blur-xl));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .backdrop-filter {
+    -webkit-backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+    backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-150 {
+    --tw-duration: 150ms;
+    transition-duration: 150ms;
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .placeholder\:text-slate-500::placeholder {
+    color: var(--color-slate-500);
+  }
+  @media (hover: hover) {
+    .hover\:border-cyan-400:hover {
+      border-color: var(--color-cyan-400);
+    }
+    .hover\:border-cyan-400\/50:hover {
+      border-color: color-mix(in srgb, oklch(78.9% 0.154 211.53) 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-cyan-400\/50:hover {
+        border-color: color-mix(in oklab, var(--color-cyan-400) 50%, transparent);
+      }
+    }
+    .hover\:border-rose-400:hover {
+      border-color: var(--color-rose-400);
+    }
+    .hover\:border-rose-400\/50:hover {
+      border-color: color-mix(in srgb, oklch(71.2% 0.194 13.428) 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:border-rose-400\/50:hover {
+        border-color: color-mix(in oklab, var(--color-rose-400) 50%, transparent);
+      }
+    }
+    .hover\:bg-cyan-500\/25:hover {
+      background-color: color-mix(in srgb, oklch(71.5% 0.143 215.221) 25%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-cyan-500\/25:hover {
+        background-color: color-mix(in oklab, var(--color-cyan-500) 25%, transparent);
+      }
+    }
+    .hover\:bg-cyan-900\/50:hover {
+      background-color: color-mix(in srgb, oklch(39.8% 0.07 227.392) 50%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-cyan-900\/50:hover {
+        background-color: color-mix(in oklab, var(--color-cyan-900) 50%, transparent);
+      }
+    }
+    .hover\:bg-cyan-900\/60:hover {
+      background-color: color-mix(in srgb, oklch(39.8% 0.07 227.392) 60%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-cyan-900\/60:hover {
+        background-color: color-mix(in oklab, var(--color-cyan-900) 60%, transparent);
+      }
+    }
+    .hover\:bg-emerald-500\/25:hover {
+      background-color: color-mix(in srgb, oklch(69.6% 0.17 162.48) 25%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-emerald-500\/25:hover {
+        background-color: color-mix(in oklab, var(--color-emerald-500) 25%, transparent);
+      }
+    }
+    .hover\:bg-rose-500\/15:hover {
+      background-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 15%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-rose-500\/15:hover {
+        background-color: color-mix(in oklab, var(--color-rose-500) 15%, transparent);
+      }
+    }
+    .hover\:bg-rose-500\/25:hover {
+      background-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 25%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-rose-500\/25:hover {
+        background-color: color-mix(in oklab, var(--color-rose-500) 25%, transparent);
+      }
+    }
+    .hover\:bg-rose-500\/30:hover {
+      background-color: color-mix(in srgb, oklch(64.5% 0.246 16.439) 30%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-rose-500\/30:hover {
+        background-color: color-mix(in oklab, var(--color-rose-500) 30%, transparent);
+      }
+    }
+    .hover\:bg-sky-500\/35:hover {
+      background-color: color-mix(in srgb, oklch(68.5% 0.169 237.323) 35%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-sky-500\/35:hover {
+        background-color: color-mix(in oklab, var(--color-sky-500) 35%, transparent);
+      }
+    }
+    .hover\:bg-white\/15:hover {
+      background-color: color-mix(in srgb, #fff 15%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/15:hover {
+        background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+      }
+    }
+    .hover\:text-cyan-200:hover {
+      color: var(--color-cyan-200);
+    }
+    .hover\:text-cyan-300:hover {
+      color: var(--color-cyan-300);
+    }
+    .hover\:text-rose-200:hover {
+      color: var(--color-rose-200);
+    }
+    .hover\:text-slate-200:hover {
+      color: var(--color-slate-200);
+    }
+    .hover\:text-white:hover {
+      color: var(--color-white);
+    }
+    .hover\:brightness-110:hover {
+      --tw-brightness: brightness(110%);
+      filter: var(--tw-blur, ) var(--tw-brightness, ) var(--tw-contrast, ) var(--tw-grayscale, ) var(--tw-hue-rotate, ) var(--tw-invert, ) var(--tw-saturate, ) var(--tw-sepia, ) var(--tw-drop-shadow, );
+    }
+  }
+  .focus\:border-cyan-400:focus {
+    border-color: var(--color-cyan-400);
+  }
+  .focus\:border-purple-400:focus {
+    border-color: var(--color-purple-400);
+  }
+  .focus\:border-sky-400:focus {
+    border-color: var(--color-sky-400);
+  }
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .active\:scale-95:active {
+    --tw-scale-x: 95%;
+    --tw-scale-y: 95%;
+    --tw-scale-z: 95%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  .disabled\:opacity-40:disabled {
+    opacity: 40%;
+  }
+  .disabled\:opacity-50:disabled {
+    opacity: 50%;
+  }
+  @media (width >= 40rem) {
+    .sm\:my-6 {
+      margin-block: calc(var(--spacing) * 6);
+    }
+    .sm\:mt-5 {
+      margin-top: calc(var(--spacing) * 5);
+    }
+    .sm\:mb-4 {
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+    .sm\:flex {
+      display: flex;
+    }
+    .sm\:h-\[60px\] {
+      height: 60px;
+    }
+    .sm\:h-\[220px\] {
+      height: 220px;
+    }
+    .sm\:h-\[240px\] {
+      height: 240px;
+    }
+    .sm\:h-\[340px\] {
+      height: 340px;
+    }
+    .sm\:h-\[360px\] {
+      height: 360px;
+    }
+    .sm\:h-\[640px\] {
+      height: 640px;
+    }
+    .sm\:w-\[60px\] {
+      width: 60px;
+    }
+    .sm\:max-w-\[260px\] {
+      max-width: 260px;
+    }
+    .sm\:max-w-\[540px\] {
+      max-width: 540px;
+    }
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:items-center {
+      align-items: center;
+    }
+    .sm\:gap-4 {
+      gap: calc(var(--spacing) * 4);
+    }
+    .sm\:rounded-2xl {
+      border-radius: var(--radius-2xl);
+    }
+    .sm\:p-4 {
+      padding: calc(var(--spacing) * 4);
+    }
+    .sm\:p-5 {
+      padding: calc(var(--spacing) * 5);
+    }
+    .sm\:py-8 {
+      padding-block: calc(var(--spacing) * 8);
+    }
+    .sm\:text-3xl {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .sm\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+    .sm\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+    .sm\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+    .sm\:text-\[11px\] {
+      font-size: 11px;
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:flex {
+      display: flex;
+    }
+    .md\:hidden {
+      display: none;
+    }
+    .md\:h-\[144px\] {
+      height: 144px;
+    }
+    .md\:h-\[172px\] {
+      height: 172px;
+    }
+    .md\:h-auto {
+      height: auto;
+    }
+    .md\:min-h-screen {
+      min-height: 100vh;
+    }
+    .md\:overflow-visible {
+      overflow: visible;
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}
+:root {
+  --bg-space: #070913;
+  --bg-gradient: radial-gradient(circle at 50% 10%, #151d38 0%, #070913 70%);
+  --phone-bg: rgba(13, 18, 36, 0.92);
+  --surface-glass: rgba(18, 25, 48, 0.7);
+  --surface-glass-strong: rgba(11, 16, 38, 0.86);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --accent-cyan: #00f2fe;
+  --accent-cyan-glow: rgba(0, 242, 254, 0.35);
+  --accent-qcyan: #00f5d4;
+  --accent-blue: #00bbf9;
+  --accent-purple: #8b5cf6;
+  --accent-purple-glow: rgba(139, 92, 246, 0.35);
+  --accent-qpurple: #7209b7;
+  --accent-pink: #f72585;
+  --accent-emerald: #10b981;
+  --accent-emerald-glow: rgba(16, 185, 129, 0.35);
+  --accent-amber: #f59e0b;
+  --accent-amber-glow: rgba(245, 158, 11, 0.35);
+  --accent-rose: #f43f5e;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;
+  --font-tech: 'Orbitron', sans-serif;
+  --font-mono: 'Rajdhani', 'JetBrains Mono', monospace;
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--bg-space);
+  background-image: var(--bg-gradient);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.45;
+}
+.font-tech {
+  font-family: var(--font-tech);
+}
+.font-mono-hud {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+.glass-panel {
+  background: var(--surface-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-glass);
+}
+.glass-panel-sub {
+  background: rgba(14, 21, 52, 0.55);
+  border: 1px solid rgba(0, 187, 249, 0.15);
+}
+.top-desktop-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 14px auto 14px;
+  background: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(12px);
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  z-index: 40;
+  max-width: calc(100vw - 24px);
+}
+.app-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  white-space: nowrap;
+}
+.mode-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.mode-btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 10px var(--accent-emerald);
+  animation: pulseRing 2s infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+.viewport-stage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 16px 24px;
+  width: 100%;
+  flex: 1;
+}
+.viewport-stage.fullscreen-stage {
+  padding: 0 16px 20px;
+}
+.phone-viewport-container {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.phone-viewport-container.mockup-mode {
+  width: 420px;
+  max-width: 100%;
+  height: 860px;
+  border-radius: 54px;
+  background: #000;
+  padding: 12px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15), 0 0 0 6px #1a1e2e, 0 25px 60px -10px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 242, 254, 0.15);
+}
+.phone-viewport-container.fullscreen-mode {
+  width: 100%;
+  max-width: 960px;
+  height: calc(100vh - 96px);
+  min-height: 640px;
+  border-radius: 28px;
+  background: rgba(13, 18, 36, 0.95);
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+}
+.phone-button-left-vol-up, .phone-button-left-vol-down, .phone-button-right-power {
+  display: none;
+}
+.mockup-mode .phone-button-left-vol-up, .mockup-mode .phone-button-left-vol-down, .mockup-mode .phone-button-right-power {
+  display: block;
+  position: absolute;
+  background: #252b40;
+  border-radius: 3px;
+}
+.mockup-mode .phone-button-left-vol-up {
+  left: -9px;
+  top: 160px;
+  width: 4px;
+  height: 50px;
+}
+.mockup-mode .phone-button-left-vol-down {
+  left: -9px;
+  top: 224px;
+  width: 4px;
+  height: 50px;
+}
+.mockup-mode .phone-button-right-power {
+  right: -9px;
+  top: 190px;
+  width: 4px;
+  height: 75px;
+}
+@media (max-width: 767px) {
+  html, body, #root {
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+  .top-desktop-bar {
+    display: none;
+  }
+  .viewport-stage, .viewport-stage.fullscreen-stage {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100dvh;
+    overflow: hidden;
+  }
+  .phone-viewport-container.mockup-mode, .phone-viewport-container.fullscreen-mode {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    overflow: hidden;
+  }
+  .mockup-mode .phone-button-left-vol-up, .mockup-mode .phone-button-left-vol-down, .mockup-mode .phone-button-right-power {
+    display: none;
+  }
+}
+.app-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--phone-bg);
+  background-image: radial-gradient(circle at 20% 15%, rgba(0, 242, 254, 0.08) 0%, transparent 40%), radial-gradient(circle at 80% 85%, rgba(139, 92, 246, 0.08) 0%, transparent 40%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.mockup-mode .app-screen {
+  border-radius: 44px;
+}
+.fullscreen-mode .app-screen {
+  border-radius: 28px;
+}
+@media (max-width: 767px) {
+  .mockup-mode .app-screen, .fullscreen-mode .app-screen {
+    border-radius: 0;
+  }
+}
+.status-notch-bar {
+  height: 44px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 30;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+}
+.dynamic-island {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 28px;
+  background: #000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: width 0.3s ease, border-color 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.dynamic-island.active-pulse {
+  width: 160px;
+  border: 1px solid rgba(0, 242, 254, 0.45);
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.25);
+}
+.island-camera {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #111a28;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.island-wave {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 12px;
+}
+.island-wave span {
+  width: 2.5px;
+  height: 4px;
+  border-radius: 2px;
+  background: #475569;
+  transition: background 0.2s ease;
+}
+.dynamic-island.active-pulse .island-wave span {
+  background: var(--accent-cyan);
+  animation: islandWave 1s infinite ease-in-out;
+}
+.dynamic-island.active-pulse .island-wave span:nth-child(2) {
+  animation-delay: 0.2s;
+  background: #00f5d4;
+}
+.dynamic-island.active-pulse .island-wave span:nth-child(3) {
+  animation-delay: 0.4s;
+  background: #f72585;
+}
+@keyframes islandWave {
+  0%, 100% {
+    height: 4px;
+  }
+  50% {
+    height: 12px;
+  }
+}
+.app-header {
+  padding: 12px 18px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(13, 18, 36, 0.5);
+  backdrop-filter: blur(12px);
+  flex-shrink: 0;
+}
+.logo-sphere {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #030b1e;
+  font-size: 1.15rem;
+  font-weight: 800;
+  box-shadow: 0 0 15px var(--accent-cyan-glow);
+  flex-shrink: 0;
+}
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(25, 33, 60, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cbd5e1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.icon-btn:hover {
+  background: rgba(35, 46, 82, 0.75);
+  color: var(--accent-cyan);
+  border-color: rgba(0, 242, 254, 0.35);
+}
+.health-strip {
+  padding: 8px 18px;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .status-notch-bar, .health-strip {
+    display: none;
+  }
+  .app-header {
+    padding: calc(10px + env(safe-area-inset-top, 0px)) 16px 10px;
+  }
+}
+.health-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-emerald);
+  box-shadow: 0 0 6px var(--accent-emerald);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.screens-viewport {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 18px 96px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
+}
+.fullscreen-mode .screens-viewport {
+  padding: 18px 26px 104px;
+}
+.screens-viewport::-webkit-scrollbar {
+  width: 4px;
+}
+.screens-viewport::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 4px;
+}
+.source-card-accent {
+  position: relative;
+  overflow: hidden;
+}
+.source-card-accent::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--card-accent, #00f2fe);
+  opacity: 0.7;
+}
+input[type="range"].cyber-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"].cyber-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--card-accent, #00f2fe);
+  box-shadow: 0 0 10px var(--card-glow, rgba(0, 242, 254, 0.7));
+  cursor: pointer;
+}
+input[type="range"].cyber-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--card-accent, #00f2fe);
+  border: none;
+  box-shadow: 0 0 10px var(--card-glow, rgba(0, 242, 254, 0.7));
+  cursor: pointer;
+}
+.cyber-switch {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+.cyber-switch.on {
+  background: var(--card-accent, #00f2fe);
+  border-color: var(--card-accent, #00f2fe);
+  box-shadow: 0 0 12px var(--card-glow, rgba(0, 242, 254, 0.4));
+}
+.cyber-switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.cyber-switch.on .cyber-switch-thumb {
+  transform: translateX(20px);
+}
+.bottom-nav-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  z-index: 25;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: rgba(10, 14, 28, 0.96);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0 8px;
+}
+.nav-tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 0;
+  border-radius: 8px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  background: transparent;
+}
+.nav-tab-item:hover {
+  color: #ffffff;
+}
+.nav-tab-item.active {
+  color: var(--accent-cyan);
+}
+.nav-tab-item.active .tab-icon-wrap {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 6px var(--accent-cyan));
+}
+.persistent-energy-bar {
+  position: absolute;
+  bottom: 70px;
+  left: 12px;
+  right: 12px;
+  z-index: 24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 15px var(--accent-cyan-glow);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .screens-viewport, .fullscreen-mode .screens-viewport {
+    padding: 10px 12px calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+  .bottom-nav-bar {
+    height: calc(58px + env(safe-area-inset-bottom, 0px));
+    padding: 0 6px env(safe-area-inset-bottom, 0px);
+  }
+  .persistent-energy-bar {
+    bottom: calc(64px + env(safe-area-inset-bottom, 0px));
+  }
+}
+.bar-pulse-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+  animation: pulseRing 1.5s infinite;
+}
+@keyframes pinShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-8px);
+  }
+  40%, 80% {
+    transform: translateX(8px);
+  }
+}
+.pin-shake {
+  animation: pinShake 0.4s ease;
+}
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 245, 212, 0.8), 0 0 20px rgba(0, 245, 212, 0.4);
+}
+.glow-cyan {
+  box-shadow: 0 0 25px rgba(0, 245, 212, 0.45);
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: block))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
+      --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+    }
+  }
+}
+</style><style id="grabbit-visited-styles">
+        .grabbit-visited,
+        .grabbit-visited:link,
+        .grabbit-visited:visited {
+            color: #551A8B !important; /* Standard visited link purple */
+        }
+    </style></head>
+  <body>
+    <div id="root"><div class="h-dvh overflow-hidden md:h-auto md:min-h-screen md:overflow-visible flex flex-col"><aside class="top-desktop-bar" aria-label="데스크톱 도구 모음"><div class="app-badge"><span class="pulse-dot"></span><span>Life Energy Cloud v2.4</span></div><button type="button" class="mode-btn"><span>📱 모바일 목업 모드</span></button><button type="button" class="mode-btn"><span>📥 앱 파일 다운로드</span></button><button type="button" class="mode-btn"><span>📲 홈 화면에 설치</span></button><button type="button" class="mode-btn"><span>🔊 사운드 테스트</span></button><button type="button" class="mode-btn border-cyan-400/40 text-cyan-300"><span>🤖 AI 에너지 코치</span></button></aside><div class="viewport-stage fullscreen-stage"><main class="phone-viewport-container fullscreen-mode"><div class="phone-button-left-vol-up" aria-hidden="true"></div><div class="phone-button-left-vol-down" aria-hidden="true"></div><div class="phone-button-right-power" aria-hidden="true"></div><div class="app-screen"><div class="status-notch-bar hidden md:flex"><span class="tabular-nums">06:02</span><div class="dynamic-island active-pulse"><div class="island-camera"></div><div class="island-wave"><span></span><span></span><span></span></div></div><div class="flex items-center gap-2"><span>5G</span><span>100%</span></div></div><header class="app-header"><div class="flex items-center gap-2.5 min-w-0"><div class="logo-sphere">⚡</div><div class="min-w-0"><h1 class="text-sm sm:text-base font-extrabold text-white tracking-tight truncate">Life Energy Cloud</h1><p class="text-[10px] font-mono-hud text-emerald-400 tracking-wider flex items-center gap-1.5"><span class="health-dot md:hidden"></span><span>ACTIVE PULSE • ONLINE</span></p></div></div><div class="hidden md:flex items-center gap-1.5 shrink-0"><button type="button" class="icon-btn text-cyan-300 border-cyan-500/35" title="AI 에너지 코치 (웹 검색)">🤖</button><button type="button" class="icon-btn" title="앱 파일 다운로드">📥</button><button type="button" class="icon-btn" title="홈 화면 앱 설치">📲</button><button type="button" class="icon-btn" title="앱 잠금">🔒</button><button type="button" class="icon-btn" title="보안 설정">⚙️</button></div><button type="button" aria-expanded="false" aria-label="도구 및 상태 정보 불러오기" class="md:hidden px-2.5 py-1.5 rounded-xl border text-[11px] font-semibold flex items-center gap-1.5 transition cursor-pointer shrink-0 bg-white/5 border-white/10 text-slate-300 hover:text-white"><span>메뉴</span><span class="text-[10px] opacity-80">▾</span></button></header><div class="health-strip hidden md:flex"><div class="flex items-center gap-1.5"><span class="health-dot"></span><span>백그라운드 지속 수신: 가동 중 (타 앱 전환 시 100% 유지)</span></div><div class="text-cyan-200/90 font-medium">전 수신 장치 무음 전송 중</div></div><div class="relative flex-1 min-h-0 flex flex-col"><div class="screens-viewport"><div class="space-y-3"><div class="glass-panel rounded-2xl p-3.5 mb-3 shadow-xl"><div class="flex items-center justify-between gap-2 mb-3 flex-wrap"><div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#00f2fe] animate-pulse"></span><span class="text-sm font-bold text-slate-100">⚡ 실시간 수신 파형</span></div><div class="flex items-center gap-2.5"><span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full border bg-cyan-500/15 border-cyan-400/40 text-cyan-300">⚡ 수신 파형 활성</span><span class="font-mono-hud text-sm font-bold text-cyan-300 tabular-nums">연속 가동</span></div></div><div class="rounded-xl bg-black/55 border border-white/10 p-2 mb-2.5"><div class="flex items-center justify-between text-[11px] mb-1 px-1"><span class="font-semibold text-slate-200">01. 코어 전송 빔</span><span class="font-mono-hud text-cyan-300">⚡ 전송 펄스 활성</span></div><div class="w-full h-[148px] md:h-[172px] overflow-hidden rounded-lg"><canvas class="block w-full h-full" width="761" height="154" style="width: 846px; height: 172px;"></canvas></div></div><div class="rounded-xl bg-black/55 border border-white/10 p-2"><div class="flex items-center justify-between text-[11px] mb-1 px-1"><span class="font-semibold text-slate-200">02. 고주파 간섭계</span><span class="font-mono-hud text-pink-400">🌊 간섭 파형 동기화</span></div><div class="w-full h-[120px] md:h-[144px] overflow-hidden rounded-lg"><canvas class="block w-full h-full" width="761" height="129" style="width: 846px; height: 144px;"></canvas></div></div></div><div class="rounded-2xl p-3 border transition glass-panel border-cyan-400/40 shadow-[0_0_18px_rgba(0,242,254,0.12)]"><div class="space-y-2"><div class="flex items-center justify-between text-[11px]"><span class="font-bold text-cyan-300">⚡ 현재 가동 타이머 (단독)</span><span class="px-2 py-0.5 rounded-full bg-cyan-500/15 border border-cyan-400/35 text-cyan-200 font-semibold">단독 가동 중</span></div><div class="flex items-center justify-between gap-3 p-2.5 rounded-xl bg-black/45 border border-white/10"><div class="flex items-center gap-2.5 min-w-0"><div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(0, 242, 254, 0.133); border: 1px solid rgba(0, 242, 254, 0.4);">🧬</div><div class="min-w-0"><div class="text-xs font-bold text-white truncate">생체에너지충전 (Bio Energy Stream)</div><div class="text-[11px] text-slate-400 truncate">연속 공급 모드 • 정지 전까지 무제한 실시간 스트림</div></div></div><div class="flex items-center gap-2 shrink-0"><span class="font-mono-hud text-base font-bold text-cyan-300 tabular-nums">05:12</span><button type="button" class="px-2.5 py-1.5 rounded-lg bg-rose-500/20 border border-rose-500/45 text-rose-300 text-xs font-bold hover:bg-rose-500/30 transition cursor-pointer">정지</button></div></div></div></div><div class="grid grid-cols-3 gap-2"><button type="button" class="py-2.5 px-2 rounded-xl text-xs font-bold border transition cursor-pointer whitespace-nowrap bg-rose-500/15 border-rose-400/60 text-rose-200 hover:bg-rose-500/25">⏸ 일시정지</button><button type="button" class="py-2.5 px-2 rounded-xl text-xs font-bold bg-slate-800/80 border border-white/10 text-slate-200 hover:border-rose-400/50 hover:text-rose-200 transition cursor-pointer whitespace-nowrap">⏹ 타이머 정지</button><button type="button" class="py-2.5 px-2 rounded-xl text-xs font-bold bg-slate-800/80 border border-white/10 text-slate-200 hover:border-cyan-400/50 hover:text-cyan-200 transition cursor-pointer whitespace-nowrap">↺ 시간 리셋</button></div><div class="flex items-center justify-between pt-1"><span class="text-xs font-bold tracking-wider text-slate-300">에너지 공급원 (ENERGY SOURCES)</span><span class="text-[11px] font-semibold text-cyan-300">단일 독점 가동 모드 (1개 전용)</span></div><div><div class="grid gap-2.5 grid-cols-1 lg:grid-cols-2"><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #10b981; --card-glow: #10b98155;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(16, 185, 129, 0.133); border: 1px solid rgba(16, 185, 129, 0.333);">⚡</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">기본 충전 (Basic Charge)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">1x 일상 활력 • 30분 기본 밸런스 회복</p></div></div><button type="button" aria-label="기본 충전 (Basic Charge) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 30분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">30:00</span></div><input min="1" max="120" step="1" class="cyber-slider w-full" type="range" value="30"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+5분</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #f43f5e; --card-glow: #f43f5e55;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(244, 63, 94, 0.133); border: 1px solid rgba(244, 63, 94, 0.333);">🥓</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">돼지고기 (Pork Precision)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">22분 정밀 타이머 • 최적 심부 조리 및 활력 보충</p></div></div><button type="button" aria-label="돼지고기 (Pork Precision) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 22분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">22:00</span></div><input min="1" max="120" step="1" class="cyber-slider w-full" type="range" value="22"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+5분</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #8b5cf6; --card-glow: #8b5cf655;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(139, 92, 246, 0.133); border: 1px solid rgba(139, 92, 246, 0.333);">🥩</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">소고기 (Beef Master)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">41분 정밀 타이머 • 프리미엄 숙성 &amp; 균일 열순환</p></div></div><button type="button" aria-label="소고기 (Beef Master) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 41분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">41:00</span></div><input min="1" max="120" step="1" class="cyber-slider w-full" type="range" value="41"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+5분</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #f59e0b; --card-glow: #f59e0b55;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(245, 158, 11, 0.133); border: 1px solid rgba(245, 158, 11, 0.333);">🌙</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">빠른 휴식 (Quick Rest)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">1.5x 파워 냅 • 15분 급속 생체 리셋</p></div></div><button type="button" aria-label="빠른 휴식 (Quick Rest) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 15분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">15:00</span></div><input min="1" max="120" step="1" class="cyber-slider w-full" type="range" value="15"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+5분</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #ec4899; --card-glow: #ec489955;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(236, 72, 153, 0.133); border: 1px solid rgba(236, 72, 153, 0.333);">💎</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">고형체 (Solid Body Timer)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">8시간 정밀 안정화 • 고밀도 바이오 고형체 숙성 및 충전</p></div></div><button type="button" aria-label="고형체 (Solid Body Timer) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 8시간 0분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">08:00:00</span></div><input min="1" max="24" step="1" class="cyber-slider w-full" type="range" value="8"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-30분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1시간</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+2시간</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #06b6d4; --card-glow: #06b6d455;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(6, 182, 212, 0.133); border: 1px solid rgba(6, 182, 212, 0.333);">💧</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">액상 (Liquid Phase Timer)</h4></div><p class="text-[11px] text-slate-400 truncate mt-0.5">72시간 초장기 안정화 • 액상 추출 및 고농도 용해 반응</p></div></div><button type="button" aria-label="액상 (Liquid Phase Timer) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 72시간 0분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">72:00:00</span></div><input min="1" max="120" step="1" class="cyber-slider w-full" type="range" value="72"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-1시간</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+1시간</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+6시간</button></div></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-cyan-400/60 shadow-[0_0_20px_rgba(0,242,254,0.16)]" style="--card-accent: #00f2fe; --card-glow: #00f2fe55; border-color: rgba(0, 242, 254, 0.6); box-shadow: rgba(0, 242, 254, 0.19) 0px 0px 18px;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(0, 242, 254, 0.133); border: 1px solid rgba(0, 242, 254, 0.333);">🧬</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">생체에너지충전 (Bio Energy Stream)</h4><span class="px-2 py-0.5 rounded-full bg-cyan-500/15 border border-cyan-400/40 text-cyan-300 text-[10px] font-bold">♾️ 연속 공급</span></div><p class="text-[11px] text-slate-400 truncate mt-0.5">연속 공급 모드 • 정지 전까지 무제한 실시간 스트림</p></div></div><button type="button" aria-label="생체에너지충전 (Bio Energy Stream) 스위치" class="cyber-switch on"><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between gap-3"><div><span class="text-[11px] text-slate-400 block">실시간 연속 경과</span><span class="font-mono-hud text-lg font-bold tabular-nums" style="color: rgb(0, 242, 254);">05:12</span></div><button type="button" class="px-3.5 py-2 rounded-xl text-xs font-bold border transition cursor-pointer bg-rose-500/20 border-rose-400/60 text-rose-200 hover:bg-rose-500/30">⏹️ 충전 종료</button></div></div><div class="glass-panel source-card-accent rounded-2xl p-3.5 pl-4 transition border-white/10" style="--card-accent: #38bdf8; --card-glow: #38bdf855;"><div class="flex items-center justify-between gap-2.5"><div class="flex items-center gap-2.5 min-w-0"><div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0" style="background-color: rgba(56, 189, 248, 0.133); border: 1px solid rgba(56, 189, 248, 0.333);">🎛️</div><div class="min-w-0"><div class="flex items-center gap-1.5 flex-wrap"><h4 class="text-sm font-bold text-white truncate">고객설정 (Custom Timer)</h4><span class="px-2 py-0.5 rounded-full bg-sky-500/15 border border-sky-400/40 text-sky-300 text-[10px] font-bold">🎛️ 맞춤 설정</span></div><p class="text-[11px] text-slate-400 truncate mt-0.5">사용자 맞춤 시·분·초 정밀 설정 • 커스텀 에너지 공급</p></div></div><button type="button" aria-label="고객설정 (Custom Timer) 스위치" class="cyber-switch "><span class="cyber-switch-thumb"></span></button></div><div class="mt-3 pt-2.5 border-t border-white/10 space-y-2.5"><div class="flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">설정 시간: 45분</span><span class="font-mono-hud text-base font-bold tabular-nums" style="color: rgb(226, 232, 240);">45:00</span></div><form class="p-2.5 rounded-xl bg-black/40 border border-sky-400/25 space-y-2"><div class="grid grid-cols-3 gap-1.5"><label class="flex flex-col gap-0.5 text-[10px] text-slate-400"><span>시간 (시)</span><input min="0" max="23" class="w-full px-2 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-xs font-mono-hud text-white text-center focus:outline-none focus:border-sky-400" type="number" value="0"></label><label class="flex flex-col gap-0.5 text-[10px] text-slate-400"><span>분</span><input min="0" max="59" class="w-full px-2 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-xs font-mono-hud text-white text-center focus:outline-none focus:border-sky-400" type="number" value="45"></label><label class="flex flex-col gap-0.5 text-[10px] text-slate-400"><span>초</span><input min="0" max="59" class="w-full px-2 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-xs font-mono-hud text-white text-center focus:outline-none focus:border-sky-400" type="number" value="0"></label></div><div class="flex items-center gap-1.5"><input placeholder="용도 메모 (예: 저온 조리, 명상)" class="flex-1 min-w-0 px-2.5 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-[11px] text-white placeholder:text-slate-500 focus:outline-none focus:border-sky-400" type="text" value=""><button type="submit" class="px-3 py-1.5 rounded-lg bg-sky-500/25 border border-sky-400/50 text-sky-200 text-[11px] font-bold hover:bg-sky-500/35 transition cursor-pointer shrink-0">적용</button></div></form><input min="1" max="180" step="1" class="cyber-slider w-full" type="range" value="45"><div class="flex items-center gap-1.5"><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">-5분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+5분</button><button type="button" class="flex-1 py-1.5 rounded-lg bg-slate-900/80 border border-white/10 text-[11px] font-semibold text-slate-200 hover:border-cyan-400/50 hover:text-cyan-300 transition cursor-pointer">+15분</button></div></div></div></div></div></div></div></div><nav class="bottom-nav-bar" aria-label="하단 내비게이션"><button type="button" class="nav-tab-item active"><span class="text-base leading-none">⏱️</span><span class="text-[11px] font-semibold mt-0.5">타이머</span></button><button type="button" class="nav-tab-item "><span class="text-base leading-none">📥</span><span class="text-[11px] font-semibold mt-0.5">수신</span></button><button type="button" class="nav-tab-item "><span class="text-base leading-none">📊</span><span class="text-[11px] font-semibold mt-0.5">대시보드</span></button><button type="button" class="nav-tab-item "><span class="text-base leading-none">🌐</span><span class="text-[11px] font-semibold mt-0.5">네트워크</span></button><button type="button" class="nav-tab-item "><span class="text-base leading-none">🎁</span><span class="text-[11px] font-semibold mt-0.5">선물</span></button></nav></div></main></div></div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+
+</body></html>
