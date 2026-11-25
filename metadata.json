@@ -1,0 +1,6 @@
+{
+  "name": "Life Energy Cloud v2.4",
+  "description": "라이프 에너지 자율 관리 클라우드 플랫폼. 실시간 듀얼 파형, 정밀 백그라운드 타이머, 양자 수신 세션, Gemini 웹 검색 AI 코치 탑재",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
